@@ -92,12 +92,26 @@ function TopMenu(): JSX.Element{
 
 
 
+function AdminPanelButton(): JSX.Element {
+  return (
+    <NavLink to="/admin" className="admin-panel-button">
+      <img src="/public/img/admin-panel.svg"
+           alt="Admin panel button" />
+    </NavLink>
+  )
+}
+
+
+
 
 function Header(): JSX.Element {
   return (
     <header>
       <div className="content">
-        <Logo styleClass="logo-s" />
+        <div className="logo-block">
+          <Logo styleClass="logo-s" />
+          <AdminPanelButton />
+        </div>
         <Phone number="+79991234567" />
         <TopMenu />
       </div>

@@ -60,6 +60,26 @@ header > .content {
 }
 
 
+.logo-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 1.2vw;
+
+  > .admin-panel-button {
+    padding: 0.5vw;
+    border-radius: 25%;
+
+    transition: all 0.5s;
+
+    &:hover {
+      box-shadow: var(--shadow-bright);
+    }
+  }
+}
+
+
 .logo-s {
   width: 212px;
   height: 40px;
